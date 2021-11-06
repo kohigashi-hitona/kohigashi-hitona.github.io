@@ -3,38 +3,6 @@
     src: url('/asserts/omikuji/font.otf');
 }
 
-.kohigashi-button {
-    color: #fff;
-    border-radius: 15px;
-    padding-left: 12px;
-    padding-right: 12px;
-    min-height: 30px;
-    line-height: 30px;
-    margin: 4px 4px;
-    min-width: 60px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    background: #373737;
-}
-
-#voice-buttons li {
-    list-style: none;
-}
-
-#voice-buttons  h2 {
-    text-align: center;
-    font-size: 20px;
-    padding: 2px 0;
-}
-
-.voice-items {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
 #nav-brand {
     flex-shrink: 1;
     z-index: 1;
@@ -74,6 +42,32 @@
 
 .footer-row h5 {
     font-weight: bold;
+}
+
+#main-carousel {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    #main-carousel {
+        width: 750px;
+        height: 422px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #main-carousel {
+        width: 970px;
+        height: 546px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main-carousel {
+        width: 1170px;
+        height: 658px;
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -119,6 +113,12 @@
     }
     #omikuji-img {
         width: 100%;
+    }
+    #main-carousel {
+        width: 100%;
+    }
+    #main-carousel h1 {
+        font-size: 20px;
     }
 }
 
@@ -410,4 +410,47 @@ ul {
 .time-row {
     display: flex;
     vertical-align: middle;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner .item {
+    max-height: 100%;
+}
+
+#main-carousel {
+    margin-bottom: 15px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    /*object-fit: cover;*/
+    object-fit: contain;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    text-align: left;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-caption .carousel-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+.banner-img-cover {
+    height: 100%;
+    max-height: 100%;
+}
+
+.carousel-text {
+    width: 100%;
 }
