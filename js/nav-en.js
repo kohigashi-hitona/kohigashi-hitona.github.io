@@ -123,6 +123,6 @@ function set_footer() {
     $('#f-bilibili-schedule').text('BiliBili Schedule');
     $('#f-bilibili-live').text('BiliBili Live');
 
-    $('#f-maintainer').html('Designed, built and maintained with all the love in the world by all Koningyos.');
+    $('#f-maintainer').html('Designed, built and maintained with all the love in the world by <a href="https://space.bilibili.com/31049854">小东人魚午安社</a> and all Koningyos.');
     $('#f-license').html('Code licensed <a href="https://github.com/kohigashi-hitona/kohigashi-hitona.github.io/blob/master/LICENSE" rel="license noopener" target="_blank">HITONA SOFTWARE LICENSE</a> (avilable at <a href="https://github.com/kohigashi-hitona/kohigashi-hitona.github.io">Github</a>), docs <a href="https://creativecommons.org/licenses/by/3.0/" rel="license noopener" target="_blank">CC BY 3.0</a>.')
 }

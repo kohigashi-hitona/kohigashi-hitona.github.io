@@ -123,6 +123,6 @@ function set_footer() {
     $('#f-bilibili-schedule').text('BiliBiliスケジュール');
     $('#f-bilibili-live').text('BiliBili配信ルーム');
 
-    $('#f-maintainer').html('ひとながずっと幸せでいられますように。<br>このサイトは小人魚のみんなが設計、構築、メンテナンスしています。');
+    $('#f-maintainer').html('ひとながずっと幸せでいられますように。<br>このサイトは<a href="https://space.bilibili.com/31049854">小东人魚午安社</a>と小人魚のみんなが設計、構築、メンテナンスしています。');
     $('#f-license').html('コードライセンスは<a href="https://github.com/kohigashi-hitona/kohigashi-hitona.github.io/blob/master/LICENSE" rel="license noopener" target="_blank">HITONAソフトライセンス</a>（コード本体は<a href="https://github.com/kohigashi-hitona/kohigashi-hitona.github.io">Github</a>であります）、データライセンスは <a href="https://creativecommons.org/licenses/by/3.0/" rel="license noopener" target="_blank">CC BY 3.0</a>。')
 }

@@ -123,6 +123,6 @@ function set_footer() {
     $('#f-bilibili-schedule').text('BiliBili主播日历');
     $('#f-bilibili-live').text('BiliBili直播间');
 
-    $('#f-maintainer').html('本站由小人鱼们设计、构建和维护。');
+    $('#f-maintainer').html('本站由<a href="https://space.bilibili.com/31049854">小东人鱼午安社</a>以及各位小人鱼们设计、构建和维护。');
     $('#f-license').html('源代码以<a href="https://github.com/kohigashi-hitona/kohigashi-hitona.github.io/blob/master/LICENSE" rel="license noopener" target="_blank">HITONA软件协议</a>授权（网站源代码可在<a href="https://github.com/kohigashi-hitona/kohigashi-hitona.github.io">这里</a>获取），所有的数据以<a href="https://creativecommons.org/licenses/by/3.0/" rel="license noopener" target="_blank">CC 3.0</a>的形式分发。')
 }
