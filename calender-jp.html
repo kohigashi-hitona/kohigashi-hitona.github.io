@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="jp" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <!-- iOS Web App support -->
+    <link rel="apple-touch-icon" href="ios-icon.png">
+    <meta name="apple-mobile-web-app-title" content="1107っで覚えてね！">
+
+    <title>ひとなん配信カレンダ - 1107っで覚えてね！</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/hitona.css" rel="stylesheet">
+    <script type="text/javascript" src="js/theme-loader.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91QHH1W5MC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-91QHH1W5MC');
+    </script>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="hitona-banner"></div>
+<div class="main-content">
+    <div class="container">
+        <div id="forecast"></div>
+        <div id="month-selector">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="year-display" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownYear" id="year-list">
+                </ul>
+            </div>
+            年
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="month-display" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMonth" id="month-list">
+                </ul>
+            </div>
+            月
+        </div>
+        <table id="horizontal-calender" class="table table-striped">
+            <thead id="calender-head"></thead>
+            <tbody id="calender-days"></tbody>
+        </table>
+        <table id="vertical-calender" class="table table-striped">
+            <tbody id="vertical-days">
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="footer"></div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<!-- Page Functions -->
+<script type="text/javascript" src="js/video_list.js"></script>
+<script type="text/javascript" src="js/calender.js"></script>
+<script type="text/javascript" src="js/url_parse.js"></script>
+<script type="text/javascript" src="js/forecast.js"></script>
+<!-- Headers & Footers -->
+<script type="text/javascript" src="js/hitona-links.js"></script>
+<script type="text/javascript" src="js/language-list.js"></script>
+<script type="text/javascript" src="js/nav-jp.js"></script>
+<script type="text/javascript">
+    $('#header').load('header.html', function() {set_nav('calender');});
+    $('#footer').load('footer.html', function() {set_footer();});
+    $(document).ready(function(){
+        create_banner(contacts);
+    });
+    load_forecast();
+    var video_list = { records: [], force_bilibili: false, args: parse_parameter() };
+    load_video_list(video_list, calender_category);
+</script>
+<!--<script src="js/jquery.min.js" crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

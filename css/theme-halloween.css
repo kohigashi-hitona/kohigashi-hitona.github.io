@@ -1,0 +1,107 @@
+:root {
+    --main-color: rgba(116,84,134,1.0);
+    --light-color: 166,136,186;
+    --light-0: rgba(var(--light-color), 1.0);
+    --light-1: rgba(var(--light-color), 0.9);
+    --light-2: rgba(var(--light-color), 0.8);
+    --light-3: rgba(var(--light-color), 0.7);
+    --light-4: rgba(var(--light-color), 0.6);
+}
+
+.vertical-day {
+    color: rgba(255,255,255,0.5);
+}
+
+.hitona-banner {
+    background: url("asserts/banner.jpg") no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin-top: 50px;
+    min-height: 160px;
+    height: calc(100vw / 6.2);
+}
+
+button {
+    background-color: #1f1f1f;
+}
+
+.card {
+    background-color: #0f0f0f!important;
+}
+
+.dropdown-menu {
+    background-color: #0f0f0f;
+}
+
+.dropdown-menu>li>a {
+    color: #f9f9f9;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: #f9f9f9;
+    background-color: #141414;
+    border-color: #060606;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus {
+    color: #f9f9f9;
+    background-color: #060606;
+    border: 1px solid #030303;
+}
+
+.form-control {
+    color: #f9f9f9;
+}
+
+.search-border {
+    background-color: #000;
+    border: 1px solid #060606;
+}
+
+.container .nav a {
+    color: #f0f0f0;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #ffffff;
+    background-color: #464646;
+}
+
+.container .nav a:hover {
+    color: #ffffff;
+    background-color: #464646;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #060606;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid #060606;
+}
+
+.main-content a {
+    color: #ffffff;
+}
+
+body {
+    color: #dedede;
+    background-color: #000000;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#nav-brand, .navbar-default .navbar-nav>li>a {
+    color: #dedede;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+}
+
+.navbar-default {
+    background-color: #0f0f0f;
+    border-color: #0f0f0f;
+}

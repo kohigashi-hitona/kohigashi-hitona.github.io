@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <!-- iOS Web App support -->
+    <link rel="apple-touch-icon" href="ios-icon.png">
+    <meta name="apple-mobile-web-app-title" content="1107っで覚えてね！">
+
+    <title>小东的全部直播 - 1107っで覚えてね！</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/hitona.css" rel="stylesheet">
+    <script type="text/javascript" src="js/theme-loader.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91QHH1W5MC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-91QHH1W5MC');
+    </script>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="hitona-banner"></div>
+<div class="main-content">
+    <div class="container">
+        <div id="forecast"></div>
+        <div class="row content-panel">
+            <div class="search-border">
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="search-icon">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input id="search-box" type="text" class="form-control search-text-box" placeholder="搜索全部直播">
+            </div>
+            <div id="num-of-results">
+                <span id="count-of-results"></span> 个结果
+            </div>
+            <table class="table table-striped">
+                <tbody id="search_results"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/video_list.js"></script>
+<script type="text/javascript" src="js/hitona-links.js"></script>
+<script type="text/javascript" src="js/language-list.js"></script>
+<script type="text/javascript" src="js/forecast.js"></script>
+<script type="text/javascript" src="js/nav-cn.js"></script>
+<script type="text/javascript">
+    $('#header').load('header.html', function() {set_nav('index');});
+    $('#footer').load('footer.html', function() {set_footer();});
+    $(document).ready(function(){
+        create_banner(contacts);
+    });
+    load_forecast();
+    let video_list = { records: [], force_bilibili: true};
+    load_video_list(video_list, create_default_list);
+    document.getElementById('search-box').oninput = function(event) {
+        filter_list(video_list, event.target.value);
+    }
+</script>
+<script type="text/javascript" src="js/jquery.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

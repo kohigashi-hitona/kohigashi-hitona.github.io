@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <!-- iOS Web App support -->
+    <link rel="apple-touch-icon" href="ios-icon.png">
+    <meta name="apple-mobile-web-app-title" content="1107っで覚えてね！">
+
+    <title>Hitona's Live Booklet - 1107っで覚えてね！</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/hitona.css" rel="stylesheet">
+    <script type="text/javascript" src="js/theme-loader.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91QHH1W5MC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-91QHH1W5MC');
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<div class="hitona-banner"></div>
+<div class="main-content">
+    <div class="container">
+        <nav>
+            <ul class="nav nav-pills">
+                <li id="p-live-list" class="active"><a href="#setori" id="p-label-live-list"></a></li>
+                <li id="p-song-list"><a href="#song-list" id="p-label-song-list"></a></li>
+                <li id="p-medley-list"><a href="#medley-list" id="p-label-medley-list"></a></li>
+                <li id="p-song-statistic"><a href="#statistic" id="p-label-song-statistic"></a></li>
+            </ul>
+        </nav>
+        <div id="p-content" class="row">
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<!-- Page Functions -->
+<script type="text/javascript" src="js/video_list.js"></script>
+<script type="text/javascript" src="js/song_list.js"></script>
+<script type="text/javascript" src="js/url_parse.js"></script>
+<!-- Headers & Footers -->
+<script type="text/javascript" src="js/hitona-links.js"></script>
+<script type="text/javascript" src="js/language-list.js"></script>
+<script type="text/javascript" src="js/nav-en.js"></script>
+<script type="text/javascript">
+    $('#header').load('header.html', function() {set_nav('song-list');});
+    $('#footer').load('footer.html', function() {set_footer();});
+    song_list_nav();
+    $(document).ready(function(){
+        create_banner(contacts);
+    });
+    let song_list = { force_bilibili: false };
+    load_song_list(song_list, on_song_list_loaded);
+</script>
+<!--<script src="js/jquery.min.js" crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
