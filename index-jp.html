@@ -35,6 +35,19 @@
 <div id="header"></div>
 <div class="hitona-banner"></div>
 <div class="main-content">
+    <div id="main-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" id="banner-indicator"></ol>
+        <div class="carousel-inner" role="listbox" id="banner-content"></div>
+        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     <div class="container">
         <div id="forecast"></div>
         <div class="row content-panel">
@@ -62,6 +75,7 @@
 <script type="text/javascript" src="js/hitona-links.js"></script>
 <script type="text/javascript" src="js/language-list.js"></script>
 <script type="text/javascript" src="js/forecast.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
 <script type="text/javascript" src="js/nav-jp.js"></script>
 <script type="text/javascript">
     $('#header').load('header.html', function() {set_nav('index');});
@@ -71,6 +85,7 @@
     });
     load_forecast();
     var video_list = { records: [], force_bilibili: false};
+    construct_banner();
     load_video_list(video_list, create_default_list);
     document.getElementById('search-box').oninput = function(event) {
         filter_list(video_list, event.target.value);
