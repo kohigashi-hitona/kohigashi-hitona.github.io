@@ -194,7 +194,13 @@
   {
     "title": "シル・ヴ・プレジデント (cover)",
     "img": "asserts/single-cover/30.jpg",
-    "y_url": "https://www.youtube.com/watch?v=vA6baQA17aA&t=94s",
+    "y_url": "https://www.youtube.com/watch?v=vA6baQA17aA",
     "b_url": "https://www.bilibili.com/video/BV1DQ4y1Q7ya?spm_id_from=333.999.0.0"
+  },
+  {
+    "title": "カワキヲアメク (cover)",
+    "img": "asserts/single-cover/34.jpg",
+    "y_url": "https://www.youtube.com/watch?v=MT6cOsMaL44",
+    "b_url": "https://www.bilibili.com/video/BV1Wq4y1k7NH?spm_id_from=333.999.0.0"
   }
 ]
