@@ -12,6 +12,7 @@ function nav_urls(my_lan) {
     $('#nav-single').attr('href', 'single-'+my_lan+'.html');
     $('#nav-song-list').attr('href', 'song-list-'+my_lan+'.html');
     $('#nav-utils').attr('href', 'utils-'+my_lan+'.html');
+    $('#nav-tweets').attr('href', 'tweets-' + my_lan + '.html');
 }
 
 function language_list(page_base, my_lan, suffix) {

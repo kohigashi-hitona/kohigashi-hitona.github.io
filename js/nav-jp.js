@@ -101,6 +101,7 @@ function set_nav(page_base) {
     nav_brand.text('非公式小東ひとな配信情報サイト');
     nav_brand.attr('href', 'index-jp.html');
     $('#nav-stream').text('配信');
+    $('#nav-tweets').text('ポスト');
     $('#nav-calender').text('カレンダ');
     $('#nav-single').text('シングル');
     $('#nav-song-list').text('セトリ');

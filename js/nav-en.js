@@ -101,6 +101,7 @@ function set_nav(page_base) {
     nav_brand.text('Unofficial Hitona Stream Information');
     nav_brand.attr('href', 'index-en.html');
     $('#nav-stream').text('Stream');
+    $('#nav-tweets').text('Posts');
     $('#nav-calender').text('Calender');
     $('#nav-single').text('Single');
     $('#nav-song-list').text('Song List');

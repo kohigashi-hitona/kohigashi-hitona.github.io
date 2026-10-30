@@ -101,6 +101,7 @@ function set_nav(page_base) {
     nav_brand.text('小东人鱼非官方直播信息站');
     nav_brand.attr('href', 'index-cn.html');
     $('#nav-stream').text('直播');
+    $('#nav-tweets').text('推文');
     $('#nav-calender').text('日历');
     $('#nav-single').text('单曲');
     $('#nav-song-list').text('歌单');
